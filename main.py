@@ -4,7 +4,6 @@ from tkinter import *
 def start():
     time = int(var.get())*60
     time_2 = time//60
-    print(time, time_2)
     system('shutdown -s -t {0} -c "Ваш компьютер будет выключен через: {1} минут"'.format(time, time_2))
     root.state('iconic')
 def stop():
